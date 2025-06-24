@@ -1,5 +1,5 @@
 {
-  "name": "atlas",
+  "name": "kibagames",
   "version": "3.5.0",
   "description": "The future of WhatsApp bots with plugin support.",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FantoX/Atlas-MD.git"
+    "url": "git+https://github.com/Keba/Atlas-MD.git"
   },
   "keywords": [
     "bot",
@@ -19,12 +19,12 @@
     "baileys bot",
     "md bot"
   ],
-  "author": "FantoX",
+  "author": "kiba",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FantoX/Atlas-MD/issues"
+    "url": "https://github.com/Kebabot/Atlas-MD/issues"
   },
-  "homepage": "https://github.com/FantoX/Atlas-MD#readme",
+  "homepage": "https://github.com/Kebabot/Atlas-MD#readme",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@fantox01/lyrics-scraper": "^1.0.1",
