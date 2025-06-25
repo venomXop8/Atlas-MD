@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center"> 
-Konnichiwa Senpai, I am "kiba-bot" an Opensource WhatsApp bot made by <a href="https://github.com/Kebabot">FantoX</a> and his team "kiba-bot" to do everything that's beyond imagination with highest <b>Features</b> and <b>Stability</b> and <b>Compatibility</b> built with Baileys Multi Device support.
+Konnichiwa Senpai, I am "kiba-bot" an Opensource WhatsApp bot made by <a href="https://github.com/Kebabot">Kiba</a> and his team "kiba-bot" to do everything that's beyond imagination with highest <b>Features</b> and <b>Stability</b> and <b>Compatibility</b> built with Baileys Multi Device support.
 
 <h3 align="center"> kiba bot - The Future Is Here
 </h4>
