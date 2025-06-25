@@ -1,15 +1,15 @@
 <p align="center">
 <a href="https://github.com/Kebabot/Atlas-MD">
-    <img src="https://i.imgur.com/JlmFHqH.jpeg">
+    <img src="https://i.imgur.com/OuJbs0b.jpeg">
   </a>
 
-<h1 align="center"> Kiba-bot
+<h1 align="center"> Nephelia
 </h1>
 
 <p align="center"> 
-Konnichiwa Senpai, I am "kiba-bot" an Opensource WhatsApp bot made by <a href="https://github.com/Kebabot">Kiba</a> and his team "kiba-bot" to do everything that's beyond imagination with highest <b>Features</b> and <b>Stability</b> and <b>Compatibility</b> built with Baileys Multi Device support.
+Konnichiwa Senpai, I am "Nephelia" an Opensource WhatsApp bot made by <a href="https://github.com/Kebabot">Kiba</a> and his team "kibaGames" to do everything that's beyond imagination with highest <b>Features</b> and <b>Stability</b> and <b>Compatibility</b> built with Baileys Multi Device support.
 
-<h3 align="center"> kiba bot - The Future Is Here
+<h3 align="center"> kiba-bot NEPHELIA - The Future Is Here
 </h4>
 
 <br>
