@@ -1,18 +1,36 @@
-FROM node:lts-buster
+FROM node:lts-bullseye
 
+# Install system dependencies
 RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  npm i pm2 -g && \
-  rm -rf /var/lib/apt/lists/*
+    apt-get install -y \
+    ffmpeg \
+    imagemagick \
+    webp \
+    build-essential \
+    python3 \
+    make \
+    g++ \
+    && apt-get upgrade -y \
+    && npm install -g npm@latest yarn pm2 \
+    && rm -rf /var/lib/apt/lists/*
 
-COPY package.json .
+# Set working directory
+WORKDIR /app
 
-RUN yarn install
+# Copy package files
+COPY package.json yarn.lock* ./
 
+# Install dependencies with retry logic
+RUN yarn config set network-timeout 300000 -g && \
+    yarn install --frozen-lockfile --production=true || \
+    (yarn cache clean && yarn install --frozen-lockfile --production=true)
+
+# Copy application files
 COPY . .
 
-CMD ["pm2-runtime", "."]
+# Health check
+HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
+    CMD node healthcheck.js || exit 1
+
+# Run application
+CMD ["pm2-runtime", "start", "index.js", "--name", "atlas-md"]
