@@ -11,7 +11,7 @@ RUN apt-get update && \
     make \
     g++ \
     && apt-get upgrade -y \
-    && npm install -g npm@latest yarn pm2 \
+    && npm install -g npm@latest pm2 \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
@@ -21,8 +21,7 @@ WORKDIR /app
 COPY package.json yarn.lock* ./
 
 # Install dependencies with retry logic
-RUN yarn config set network-timeout 300000 -g && \
-    yarn install --frozen-lockfile --production=true || \
+RUN yarn install --frozen-lockfile --production=true || \
     (yarn cache clean && yarn install --frozen-lockfile --production=true)
 
 # Copy application files
